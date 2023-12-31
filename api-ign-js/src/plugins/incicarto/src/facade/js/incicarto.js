@@ -94,7 +94,7 @@ export default class Incicarto extends M.Plugin {
     this.products_ = options.productList || [];
 
     this.prefixSubject_ = options.prefixSubject;
-    if (this.prefixSubject_ === undefined) this.prefixSubject_ = 'Incidencia cartografía - ';
+    if (this.prefixSubject_ === undefined) this.prefixSubject_ = 'PICP Corte - ';
 
     /**
      * Name of the plugin
