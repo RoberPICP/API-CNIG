@@ -16,8 +16,9 @@
                     </div>
                 </div>
             {{/if}}
+
             {{#if errors}}
-                <div id="m-incicarto-metadata-errors" class="m-plugin-incicarto-html">
+                <div style="display: none" id="m-incicarto-metadata-errors" class="m-plugin-incicarto-html">
                     <label for="error-select">Errores:</label>
                     <select id="error-select" name="error-select">
                         {{#each errors}}
@@ -29,8 +30,8 @@
                 </div>
             {{/if}}
             {{#if products}}
-                <div id="m-incicarto-metadata-product" class="m-plugin-incicarto-html">
-                    <label for="product-select">Producto:</label>
+                <div style="display: none" id="m-incicarto-metadata-product" class="m-plugin-incicarto-html">
+                    <label for="product-select">Tema:</label>
                     <select id="product-select" name="product-select">
                         {{#each products}}
                             <option value="{{@index}}">{{this}}</option>
@@ -40,27 +41,29 @@
                     </div>
                 </div>
             {{/if}}
+          
             <div id="m-incicarto-metadata-description" class="m-plugin-incicarto-form">
                 <div class="m-plugin-incicarto-form-input-group">
-                    <label for="person-notify">Nombre</label>
+                 <!--   <label for="person-notify">Nombre</label> -->
                     <input id="person-notify" type="text" name="person-notify" placeholder="Nombre para seguimiento"></input>
                 </div>
                 <div class="m-plugin-incicarto-form-input-group">
-                    <label for="email-notify">Notificaciones</label>
+                    <!--    <label for="email-notify">Notificaciones</label> -->
                     <input id="email-notify" type="email" name="email-notify" placeholder="Correo electrónico para seguimiento"></input>
                 </div>
                 <div class="m-plugin-incicarto-form-input-group">
-                    <label for="err-description">Descripción</label>
+                    <!--   <label for="err-description">Descripción</label> -->
                     <textarea id="err-description" type="text" name="err-description"></textarea>
                 </div>
             </div>
-
+            <!--
             <div class="m-plugin-incicarto-html">
                 <span>{{translations.headtext2}}</span>
             </div>
             <div class="m-plugin-incicarto-html">
                 <p>La incidencia y sus parámetros se enviarán al buzón de incidencias seleccionado por el usuario</p>
             </div>
+            -->
             {{#if mails}}
                 <div class="m-plugin-incicarto-html">
                     <label for="email-to">Destinatarios:</label>
@@ -73,7 +76,7 @@
                     </div>
                 </div>
             {{/if}}
-            <div id="m-incicarto-metadata-adjuntfile" class="m-plugin-incicarto-form">
+     <!--       <div id="m-incicarto-metadata-adjuntfile" class="m-plugin-incicarto-form">
                 <input type="file" name="fileUpload" id="fileUpload" class="inputfile" data-multiple-caption="{count} ficheros seleccionados" multiple hidden />
                 <label for="fileUpload">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" enable-background="new 0 0 512 512" style="fill:white;">
@@ -81,6 +84,7 @@
                     </svg>
                     <span id="infoUpload">Adjuntar fichero &hellip;</span></label>
             </div>
+        -->
             <div class="m-plugin-incicarto-html">
                 <button id="m-plugin-incicarto-send-email">{{translations.btntext1}}</button>
             </div>
