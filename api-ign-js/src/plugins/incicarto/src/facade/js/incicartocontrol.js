@@ -470,7 +470,7 @@ export default class IncicartoControl extends M.Control {
       parseToHtml: false, // La compilación de la plantilla devuelve una cadena cuando parseToHtml = false
       vars: {
         translations: {
-          headtext1: 'Descripción de la incidencia',
+          headtext1: 'Descripción',
           headtext2: 'Enviar por correo electrónico',
           btntext1: 'Enviar e-mail',
         },
@@ -497,7 +497,7 @@ export default class IncicartoControl extends M.Control {
     }
 
     const dialog = M.template.compileSync(modaladvance, optionsModal);
-    M.dialog.info(dialog, "Enviar notificación de incidencia en cartografía");
+    M.dialog.info(dialog, "Enviar");
 
     setTimeout(() => {
       document.querySelector("#m-plugin-incicarto-send-email").addEventListener('click', (e) => {
@@ -547,7 +547,7 @@ export default class IncicartoControl extends M.Control {
       parseToHtml: false, // La compilación de la plantilla devuelve una cadena cuando parseToHtml = false
       vars: {
         translations: {
-          headtext1: 'Descripción de la incidencia',
+          headtext1: 'Descripción',
           btntext1: 'Enviar e-mail',
         },
         themes: {},
@@ -561,7 +561,7 @@ export default class IncicartoControl extends M.Control {
     }
 
     const dialog = M.template.compileSync(modalsimple, optionsModal);
-    M.dialog.info(dialog, "Enviar notificación de incidencia en cartografía");
+    M.dialog.info(dialog, "Enviar");
     setTimeout(() => {
       document.querySelector("#m-plugin-incicarto-simple-send-email").addEventListener('click', (e) => {
         let mailto_composed = this.composeMailtoSendByPasarela((event) => {
@@ -675,7 +675,7 @@ export default class IncicartoControl extends M.Control {
     const { x, y } = this.map_.getCenter();
     const shareURL = `?center=${x},${y}&zoom=${this.map_.getZoom()}`;
 
-    let email_subject = 'Incidencia Cartografía - ' + theme;
+    let email_subject = 'PICP Corte - ' + theme;
 
     this.geometryIncidenceJSON = JSON.parse(this.geometryIncidence);
 
@@ -971,7 +971,7 @@ export default class IncicartoControl extends M.Control {
   }
 
   addNewLayer(geom) {
-    const layerName = `incidencia_${new Date().getTime()}`;
+    const layerName = `picp_${new Date().getTime()}`;
     const layer = new M.layer.Vector({ name: layerName, legend: layerName, extract: false });
     layer.geometry = geom;
     this.map.addLayers(layer);
