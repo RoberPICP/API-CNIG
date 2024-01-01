@@ -1,3 +1,6 @@
+# FORK API CNIG
+ Para la compilación de plugins
+
 # API CNIG
 
 API CNIG es una herramienta que permite integrar de una forma muy sencilla un visualizador de mapas interactivo en cualquier página web y configurarlo consumiendo ficheros WMC, servicios WMS y WMTS, servicios WFS, ficheros KML, etc. Además, provee la capacidad de añadir una gran cantidad de herramientas y controles.
