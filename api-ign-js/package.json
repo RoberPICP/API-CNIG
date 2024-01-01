@@ -59,6 +59,7 @@
     "handlebars": "^4.4.5",
     "jsdoc": "^3.6.3",
     "jsts": "^2.0.2",
+    "npm-check-updates": "^16.14.12",
     "ol": "6.3.1",
     "ol-mapbox-style": "^6.3.2",
     "pako": "^1.0.11",
