@@ -1,0 +1,10 @@
+.m-rotate-container {
+    top: 20px;
+    left: 600px;
+}
+
+#m-rotate-button {
+    color: #337ceb;
+    border: 2px solid white;
+    border-radius: 20px;
+}
