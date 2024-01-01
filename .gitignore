@@ -1,1 +1,29 @@
+<<<<<<< HEAD
 node_modules/
+=======
+# Directorios y ficheros ignorados por git
+*.settings
+*.project
+*.classpath
+*.externalToolBuilders
+.atomignore
+.sonarlint
+node
+node_modules
+target
+externs
+libraries
+doc
+build
+dist
+index.js
+package-lock.json
+index-*.js
+entry-points-plugins.json
+*~
+.vscode
+/.metadata/
+/.sonarlint/
+package-lock.json
+bin/
+>>>>>>> a822cd9ef49031e90674367ea611de473980edf5
